@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+### 
+GET http://localhost:5000/users/51421015
+
+###
+POST http://localhost:5000/users/
+Content-Type: application/json
+
+{
+    "nama": "Najwan",
+    "kelas": "3IA04",
+    "npm" : 51421016,
+    "umur" : 20 
+}
+
+###
+PATCH http://localhost:5000/users/51421015
+Content-Type: application/json
+
+{
+    "nama": "Abiyyu",
+    "kelas": "3IA04",
+    "npm" : 51421015,
+    "umur" : 20 
+}
+
+###
+DELETE http://localhost:5000/users/51421016
